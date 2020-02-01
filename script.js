@@ -10,22 +10,25 @@ const maxPrice = [25000, 50000, 75000, 100000, 125000, 150000, 175000, 200000, 2
 
 $ (() => {
 
-// var settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://realtor.p.rapidapi.com/properties/detail?listing_id=608763437&prop_status=for_sale&property_id=4599450556",
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "realtor.p.rapidapi.com",
-// 		"x-rapidapi-key": "a7e18599a7msh0e4b44020cda7e2p156c1ejsnd934c76f8c56"
-// 	}
-// }
-
-// $.ajax(settings).done(function (response) {
-// 	console.log(response);
-// });
-
-
+    const $openBtn = $('#open-modal-houses');
+    const $modal = $('#modal-house');
+    const $closeBtn = $('#close');
+    
+    // Event handler to open the modal
+    const openModal = () => {
+      $modal.css('display', 'block');
+    }
+    
+    // Event handler to close the modal
+    const closeModal = () => {
+      $modal.css('display', 'none');
+    }
+    
+    //adding event listener
+    $openBtn.on('click', openModal);
+    
+    //Add event listener to Close button
+    $closeBtn.on('click', closeModal);
 
 
 })
