@@ -63,7 +63,7 @@ $ (() => {
             
 
       $.ajax(house).then( (data) => {
-        // console.log(data);
+        console.log(data);
         
         for (let i = 0; i < data.listings.length; i++) {
           
@@ -95,6 +95,7 @@ $ (() => {
   
           spanTwo.text(`Rooms: ${data.listings[i].beds}Beds ${data.listings[i].baths}Baths`)
 
+          $(".list-house").text(`${data.listings.length} Listings`)
         }
       })
 
@@ -111,7 +112,7 @@ $ (() => {
     }
         
         $.ajax(multi).then( (data) => {
-          console.log(multi);
+          console.log(data);
 
           for (let i = 0; i < data.listings.length; i++) {
           
@@ -143,10 +144,13 @@ $ (() => {
     
             spanTwo.text(`Rooms: ${data.listings[i].beds}Beds ${data.listings[i].baths}Baths`)
 
+
+
+            $(".list-multi").text(`${data.listings.length} Listings`)
           }
         })
       
-
+        
 
 
 
