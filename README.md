@@ -6,9 +6,9 @@ Technologies uses: html, css, javascript
 
 approach:  Searched online for a real estate api. 
 		Found realtor on rapidaip.com.
-		Made a blue print of the app with adobe XD.
+		Made a wireframe of the app with adobe XD.
 		Found pictures on google and saved them to folder.
-		created html and css doc to match blue print.
+		created html and css doc to match wireframe.
 		Made the cite responsive.
 		Created js doc and started to create two modals.
 		Once modal was done, started accessing realtor api using js.
@@ -21,7 +21,7 @@ approach:  Searched online for a real estate api.
 
 
 
-Live site: https://phuynh7577.github.io/phuynh7577/
+Live site: https://phuynh7577.github.io/
 
 
 Installation instructions:  none needed.
