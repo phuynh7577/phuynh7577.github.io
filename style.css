@@ -202,5 +202,10 @@ body {
 
 
 @media screen and (min-width: 400px) {
-  
+  #modal-multifamily {
+  bottom: 949;
+  }
+  .footer {
+  margin-top: 93px;
+  }
 }
