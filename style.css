@@ -52,7 +52,6 @@ body {
   text-align: center;
   margin-bottom: 25px;
   margin-top: 30px;
-  /* margin-left: 24px; */
 }
 
 .anchors img {
@@ -99,12 +98,12 @@ body {
 .footer h6 {
   color: white;
   text-align: center;
-  margin-top: 180px;
+  margin-top: 350px;
 }
 
 
 
-/* modal starts here */
+/* house modal starts here */
 
 #modal-house {
   position: fixed;
@@ -138,12 +137,70 @@ body {
   margin-top: 2px;
 }
 
+/* multifamily modal starts here */
+
+#modal-multifamily {
+  position: fixed;
+  background: #D2D4D8;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  z-index: 15;
+  overflow: auto;
+  display: none;
+  text-align: center;
+  border: 3px solid #141A26;
+}
+
+#modal-divs {
+	background-color: #D2D4D8;
+	height: 100%;
+	width: 98%;
+	margin: 0 auto;
+}
+
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: "neuton", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+#modal-divs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.single-div {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 350px;
+  align-items: center;
+  position: relative;
+  background: #141A26; 
+  margin: 30px 10px;
+  color: #D2D4D8;
+  border-radius: 5px;
+}
 
 
+#divs-multifamily {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 
-
-
-
-
-
+@media screen and (min-width: 400px) {
+  
+}
