@@ -18,10 +18,63 @@
             <h3>Rhode Island</h2>
         </nav>
 
-        <div id="background"></div>
+        <div id="background"></div> 
 
-        <nav class="nav-container-bottom">
-            <h1>NEVER TRUSTED SINCE 2020</h1>
+
+        <div class="second-page">
+            <div class="page-container">
+                <div id="return-btn">
+                    <button class="modal-secondpage" id="close-search" href="#">Return</button>
+                </div>
+                <!-- make filter buttons here -->
+            <div id="filter">
+                <select name="" id="property-type">
+                    <option value="">Select Type</option>
+                    <option value="&prop_type=single_family">Single Family</option>
+                    <option value="&prop_type=multi_family">Multi Family</option>
+                    <option value="&prop_type=condo">Condo</option>
+                    <option value="&prop_type=mobile">Mobile</option>
+                    <option value="&prop_type=land">Land</option>
+                    <option value="&prop_type=farm">Farm</option>
+                    </select>
+                    <select name="" id="price-min">
+                        <option value="">Select Min Price+</option>
+                        <option value="&price_min=50000">$50,000+</option>
+                        <option value="&price_min=100000">$100,000+</option>
+                        <option value="&price_min=150000">$150,000+</option>
+                        <option value="&price_min=200000">$200,000+</option>
+                        <option value="&price_min=250000">$250,000+</option>
+                        <option value="&price_min=300000">$300,000+</option>
+                            </select>
+                            <select name="" id="price-max">
+                                <option value="">Select Max Price</option>
+                                <option value="&price_man=50000">&#60$50,000</option>
+                                <option value="&price_man=100000">&#60$100,000</option>
+                                <option value="&price_man=150000">&#60$150,000</option>
+                                <option value="&price_man=200000">&#60$200,000</option>
+                                <option value="&price_man=250000">&#60$250,000</option>
+                                <option value="&price_man=300000">&#60$300,000</option>
+                                <option value="&price_man=300000">&#60$400,000</option>
+                                <option value="&price_man=300000">&#60$500,000</option>
+                                <option value="&price_max=300000">&#60$600,000</option>
+                                <option value="$price_max=999999999">$600,000+</option>
+                                </select>
+                                    <div class="search-listings"></div>
+                            </div>
+                        </div>
+
+                <div class="for-sale-container">
+                    <!-- a bunch of divs here -->
+                </div>
+            
+        </div>
+
+   
+
+
+        <nav class="search-home">
+                <button class="search-buttons" id="search" href="">For More Listings</button>
+
         </nav>
     
     <div id="modal-house">
@@ -47,13 +100,13 @@
 
         <div class="anchors">
             <div class="houses">
-                <h1 class="category-house">Houses | <span class="list-house">#### Listings</span></h1> 
+                <h1 class="category-house">Houses | <span class="list-house"></span></h1> 
                 <a id="open-modal-houses"><img src="house.jpg" width=320px height=320px></a>
             </div>
 
 
             <div class="multifamily">
-                <h1 class="category-multifamily">Multi Family | <span class="list-multi">#### Listings</span></h1> 
+                <h1 class="category-multifamily">Multi Family | <span class="list-multi"></span></h1> 
                 <a id="open-modal-multifamily"><img src="multifamily.jpg" width=320px height=320px></a>
                 
             </div>
@@ -62,7 +115,7 @@
 
    
         <footer class="footer">
-            <h6>BEN-REAL ESTATE copy right 2020</h6>
+            <h6>BEN-REAL ESTATE copyright 2020</h6>
         </footer>
 
 
