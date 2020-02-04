@@ -111,7 +111,7 @@ body {
 }
 
 .footer h6 {
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 350px;
 }
@@ -149,6 +149,11 @@ body {
   box-shadow: -3px 3px #B8C9D5, -2px 2px #B8C9D5, -1px 1px #B8C9D5;
   cursor: pointer;
   font-family: "neuton", Arial, Helvetica, sans-serif;
+}
+
+.modal-buttons:hover {
+  transition: all 1s linear;
+  background: rgb(177, 53, 53);
 }
 
 /* multifamily modal starts here */
@@ -193,7 +198,6 @@ body {
   background: #141A26; 
   margin: 30px 10px;
   color: #D2D4D8;
-  border-radius: 5px;
   text-align: center;
 }
 
@@ -270,7 +274,6 @@ body {
   justify-content: space-evenly;
   text-align: center;
   font-family: "neuton", Arial, Helvetica, sans-serif;
-  margin-top: 180px;
 }
 
 .search-listings {
@@ -278,10 +281,6 @@ body {
   font-family: "neuton", Arial, Helvetica, sans-serif;
 }
 
-.page-container{
-  position: fixed;
-  width: 100%;
-}
 /* media query starts here */
 
 @media screen and (min-width: 375px) {

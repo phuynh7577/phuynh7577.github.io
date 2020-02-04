@@ -69,118 +69,125 @@ $ (() => {
 
 
 
-  // var house = {
-  //   "async": true,
-  //   "crossDomain": true,
-  //   "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?is_pending=false&sort=relevance&radius=10&prop_type=single_family&city=Providence&offset=0&limit=400&state_code=RI",
-  //   "method": "GET",
-  //   "headers": {
-  //         "x-rapidapi-host": "realtor.p.rapidapi.com",
-  //         "x-rapidapi-key": "a7e18599a7msh0e4b44020cda7e2p156c1ejsnd934c76f8c56"
-  //       }
-  //     }
+  var house = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?is_pending=false&sort=relevance&radius=10&prop_type=single_family&city=Providence&offset=0&limit=400&state_code=RI",
+    "method": "GET",
+    "headers": {
+          "x-rapidapi-host": "realtor.p.rapidapi.com",
+          "x-rapidapi-key": "a7e18599a7msh0e4b44020cda7e2p156c1ejsnd934c76f8c56"
+        }
+      }
             
 
-  //     $.ajax(house).then( (data) => {
-  //       // console.log(data);
+      $.ajax(house).then( (data) => {
+        // console.log(data);
         
-  //       for (let i = 0; i < data.listings.length; i++) {
+        for (let i = 0; i < data.listings.length; i++) {
           
-  //         const div1 = $("<div>").addClass("single-div")
-  //         $("#modal-divs").append(div1)
+          const div1 = $("<div>").addClass("single-div")
+          $("#modal-divs").append(div1)
           
-  //         const h1 = $("<h1>")
+          const h1 = $("<h1>")
 
-  //         const h2 = $("<h2>")
+          const h2 = $("<h2>")
 
-  //         const span = $("<span>")
+          const span = $("<span>")
           
-  //         const spanTwo = $("<span>")
+          const spanTwo = $("<span>")
 
-  //         $(div1).append(h1)
-  //         $(div1).append(h2)
-  //         $(div1).append(span)
-  //         $(div1).append(spanTwo)
+          $(div1).append(h1)
+          $(div1).append(h2)
+          $(div1).append(span)
+          $(div1).append(spanTwo)
           
 
-  //         h1.text(`${data.listings[i].address}`)
+          h1.text(`${data.listings[i].address}`)
           
-  //         h2.text(`${data.listings[i].price}`)
+          h2.text(`${data.listings[i].price}`)
 
-  //         const image = $("<img>").attr("src", data.listings[i].photo).addClass("img")
-  //         $(div1).append(image)
+          const image = $("<img>").attr("src", data.listings[i].photo).addClass("img")
+          $(div1).append(image)
           
-  //         span.text(`SIZE: ${data.listings[i].sqft_raw}sqft`)
+          span.text(`SIZE: ${data.listings[i].sqft_raw}sqft`)
   
-  //         spanTwo.text(`Rooms: ${data.listings[i].beds}Beds ${data.listings[i].baths}Baths`)
+          spanTwo.text(`Rooms: ${data.listings[i].beds}Beds ${data.listings[i].baths}Baths`)
 
-  //         $(".list-house").text(`${data.listings.length} Listings`)
-  //       }
-  //     })
+          $(".list-house").text(`${data.listings.length} Listings`)
+        }
+      })
 
 // multi family modal
-    // var multi = {
-    //   "async": true,
-    //   "crossDomain": true,
-    //   "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=10&prop_type=multi_family&city=Providence&offset=0&limit=400&state_code=RI",
-    //   "method": "GET",
-    //   "headers": {
-    //     "x-rapidapi-host": "realtor.p.rapidapi.com",
-    //     "x-rapidapi-key": "a7e18599a7msh0e4b44020cda7e2p156c1ejsnd934c76f8c56"
-    //   }
-    // }
+    var multi = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=10&prop_type=multi_family&city=Providence&offset=0&limit=400&state_code=RI",
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-host": "realtor.p.rapidapi.com",
+        "x-rapidapi-key": "a7e18599a7msh0e4b44020cda7e2p156c1ejsnd934c76f8c56"
+      }
+    }
         
-    //     $.ajax(multi).then( (data) => {
-    //       // console.log(data);
+        $.ajax(multi).then( (data) => {
+          // console.log(data);
 
-    //       for (let i = 0; i < data.listings.length; i++) {
+          for (let i = 0; i < data.listings.length; i++) {
           
-    //         const div1 = $("<div>").addClass("single-div")
-    //         $("#divs-multifamily").append(div1)
+            const div1 = $("<div>").addClass("single-div")
+            $("#divs-multifamily").append(div1)
             
-    //         const h1 = $("<h1>")
+            const h1 = $("<h1>")
   
-    //         const h2 = $("<h2>")
+            const h2 = $("<h2>")
   
-    //         const span = $("<span>")
+            const span = $("<span>")
             
-    //         const spanTwo = $("<span>")
+            const spanTwo = $("<span>")
   
-    //         $(div1).append(h1)
-    //         $(div1).append(h2)
-    //         $(div1).append(span)
-    //         $(div1).append(spanTwo)
+            $(div1).append(h1)
+            $(div1).append(h2)
+            $(div1).append(span)
+            $(div1).append(spanTwo)
             
   
-    //         h1.text(`${data.listings[i].address}`)
+            h1.text(`${data.listings[i].address}`)
             
-    //         h2.text(`${data.listings[i].price}`)
+            h2.text(`${data.listings[i].price}`)
   
-    //         const image = $("<img>").attr("src", data.listings[i].photo).addClass("img")
-    //         $(div1).append(image)
+            const image = $("<img>").attr("src", data.listings[i].photo).addClass("img")
+            $(div1).append(image)
             
-    //         span.text(`SIZE: ${data.listings[i].sqft_raw}sqft`)
+            span.text(`SIZE: ${data.listings[i].sqft_raw}sqft`)
     
-    //         spanTwo.text(`Rooms: ${data.listings[i].beds}Beds ${data.listings[i].baths}Baths`)
+            spanTwo.text(`Rooms: ${data.listings[i].beds}Beds ${data.listings[i].baths}Baths`)
 
 
 
-    //         $(".list-multi").text(`${data.listings.length} Listings`)
-    //       }
-    //     })
+            $(".list-multi").text(`${data.listings.length} Listings`)
+          }
+        })
       
         
 
+
+
+// search button
     $('#filter').on('change', (event)=>{
 
       event.preventDefault();
 
       const userSelect = $("#property-type option:selected").val();
 
+      const userSelectMaxPrice = $("#price-max option:selected").val();
+
+      const userSelectMinPrice = $("#price-min option:selected").val();
+
     var secondPage = {
       "async": true,
       "crossDomain": true,
-      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=20&city=Providence&offset=0&limit=850&state_code=RI" + userSelect,
+      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=20&city=Providence&offset=0&limit=850&state_code=RI" + userSelect + userSelectMinPrice + userSelectMaxPrice,
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "realtor.p.rapidapi.com",
@@ -230,7 +237,9 @@ $ (() => {
 
 
 
-    
+  $(".search-buttons").click( () => {
+    $(".footer h6").css("color", "#D2D4D8")
+  })
 
 
 
