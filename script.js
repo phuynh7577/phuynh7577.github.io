@@ -72,7 +72,7 @@ $ (() => {
   var house = {
     "async": true,
     "crossDomain": true,
-    "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?is_pending=false&sort=relevance&radius=10&prop_type=single_family&city=Providence&offset=0&limit=400&state_code=RI",
+    "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?is_pending=false&sort=relevance&radius=10&prop_type=single_family&city=Providence&offset=0&limit=200&state_code=RI",
     "method": "GET",
     "headers": {
           "x-rapidapi-host": "realtor.p.rapidapi.com",
@@ -122,7 +122,7 @@ $ (() => {
     var multi = {
       "async": true,
       "crossDomain": true,
-      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=10&prop_type=multi_family&city=Providence&offset=0&limit=400&state_code=RI",
+      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=10&prop_type=multi_family&city=Providence&offset=0&limit=100&state_code=RI",
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "realtor.p.rapidapi.com",
@@ -139,11 +139,8 @@ $ (() => {
             $("#divs-multifamily").append(div1)
             
             const h1 = $("<h1>")
-  
             const h2 = $("<h2>")
-  
             const span = $("<span>")
-            
             const spanTwo = $("<span>")
   
             $(div1).append(h1)
@@ -187,7 +184,7 @@ $ (() => {
     var secondPage = {
       "async": true,
       "crossDomain": true,
-      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=20&city=Providence&offset=0&limit=850&state_code=RI" + userSelect + userSelectMinPrice + userSelectMaxPrice,
+      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=20&city=Providence&offset=0&limit=200&state_code=RI" + userSelect + userSelectMinPrice + userSelectMaxPrice,
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "realtor.p.rapidapi.com",

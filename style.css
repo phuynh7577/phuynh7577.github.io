@@ -124,13 +124,14 @@ body {
   position: fixed;
   background: #D2D4D8;
   width: 100%;
-  height: 80%;
+  height: 200%;
   position: absolute;
   z-index: 15;
   overflow: auto;
   display: none;
   text-align: center;
   border: 3px solid #141A26;
+  top: 541px;
 }
 
 #modal-divs {
@@ -162,14 +163,14 @@ body {
   position: fixed;
   background: #D2D4D8;
   width: 100%;
-  height: 80%;
+  height: 200%;
   position: absolute;
   z-index: 15;
   overflow: auto;
   display: none;
   text-align: center;
   border: 3px solid #141A26;
- 
+  top: 541px;
 }
 
 #modal-divs {
@@ -180,11 +181,16 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #modal-top {
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: rgb(73, 74, 77);
 }
 
 .single-div {
@@ -209,14 +215,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* second page starts here */
 
 .second-page {
   width: 100%;
-  height: 100%;
+  height: 300%;
   background: #D2D4D8;
   position: absolute;
   left: 0;
@@ -227,9 +233,10 @@ body {
 
 #filter {
   text-align: center;
-  margin-top: 18px;
   margin-bottom: 18px;
-  /* position: fixed; */
+  background: rgb(73, 74, 77);
+  position: sticky;
+  z-index: 75;
 }
 
 #filter select {
@@ -265,7 +272,7 @@ body {
 
 .for-sale-container {
   width: 100%;
-  height: 75%;
+  height: 300%;
   background-color: #D2D4D8;
   z-index: 100;
   display: flex;
@@ -277,21 +284,29 @@ body {
 }
 
 .search-listings {
-  color: #141A26;
+  color: #D2D4D8;
   font-family: "neuton", Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+  position: sticky;
+  top: 0;
+  z-index: 90;
 }
 
 /* media query starts here */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 400px) {
   #modal-multifamily {
   bottom: 949;
   }
+
   .footer {
   margin-top: 93px;
   }
+
   #filter select {
-    color: #141A26;
+    color: #D2D4D8;
     border: 1px solid white;
     margin-bottom: 5px;
     
