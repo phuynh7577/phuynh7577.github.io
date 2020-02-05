@@ -242,6 +242,7 @@ body {
 #filter select {
   margin-left: 30px;
   font-size: 15px;
+  color: black;
 }
 
 #return-btn {
