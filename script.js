@@ -122,7 +122,7 @@ $ (() => {
     var multi = {
       "async": true,
       "crossDomain": true,
-      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=10&prop_type=multi_family&city=Providence&offset=0&limit=100&state_code=RI",
+      "url": "https://realtor.p.rapidapi.com/properties/list-for-sale?sort=relevance&radius=10&prop_type=multi_family&city=Providence&offset=0&limit=200&state_code=RI",
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "realtor.p.rapidapi.com",
